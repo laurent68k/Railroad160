@@ -12,7 +12,7 @@ class MainViewController: BaseViewController {
     @IBOutlet weak var aboutItem: UIBarButtonItem!
     @IBOutlet var settingsItem: UIBarButtonItem!
     
-    private var viewModel = MainViewModel()
+    private var viewModel = MainViewModel.shared
     
     override func viewDidLoad() {
         
@@ -54,14 +54,5 @@ class MainViewController: BaseViewController {
     
     //  -----------------------------------------------------------------------------------------------
     
-    @IBAction func buttonTestAction(_ sender: UIButton) {
-        
-        self.toast(forMessage: "button clicked")
-    }
-    
-    @IBAction func aboutItemAction(_ sender: UIBarButtonItem) {
-
-        self.toast(forMessage: "about me")
-    }
 }
 

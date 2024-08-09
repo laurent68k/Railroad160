@@ -37,27 +37,13 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Le1-Oa-Qur">
-                                <rect key="frame" x="284" y="490" width="200" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="bli-hu-Edn"/>
-                                    <constraint firstAttribute="height" constant="44" id="j3C-uO-T2o"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="buttonTestAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awD-9d-7OT"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yb1-jV-2mp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4HJ-0X-Ghj"/>
-                            <constraint firstItem="Le1-Oa-Qur" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FLB-Vw-Muc"/>
                             <constraint firstItem="yb1-jV-2mp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IYo-bN-c59"/>
                             <constraint firstItem="yb1-jV-2mp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k2K-ge-47v"/>
-                            <constraint firstItem="Le1-Oa-Qur" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zmJ-gI-oUC"/>
                         </constraints>
                     </view>
                     <connections>
@@ -118,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="-256" y="755"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="wU6-7B-h4S">
             <objects>
-                <viewController id="yRC-Oq-Kgg" sceneMemberID="viewController">
+                <viewController id="yRC-Oq-Kgg" customClass="SettingsViewController" customModule="railroad160" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3qZ-Rh-Kdt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,7 +119,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem id="yEj-cX-whW">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="SAV-fa-3iM"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="SAV-fa-3iM">
+                                            <connections>
+                                                <action selector="cancelAction:" destination="yRC-Oq-Kgg" id="wjh-cp-s9r"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="jS9-HV-v5c">
                                             <connections>
                                                 <segue destination="kWc-j7-3G7" kind="unwind" unwindAction="backToMainViewController:" id="R6c-s5-rUR"/>
@@ -142,13 +132,33 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmd-zZ-3if">
+                                <rect key="frame" x="16" y="229" width="135.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LED Builtin ON"/>
+                                <connections>
+                                    <action selector="builtinLedOn:" destination="yRC-Oq-Kgg" eventType="touchUpInside" id="57h-WE-KaA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeK-zh-l2Y">
+                                <rect key="frame" x="16" y="280" width="142" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LED Builtin OFF"/>
+                                <connections>
+                                    <action selector="builtinLedOff:" destination="yRC-Oq-Kgg" eventType="touchUpInside" id="crW-5i-caw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BJe-QU-jAU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DeK-zh-l2Y" firstAttribute="leading" secondItem="BJe-QU-jAU" secondAttribute="leading" constant="16" id="Fxs-Cx-KQE"/>
                             <constraint firstItem="K8t-IO-ZR2" firstAttribute="top" secondItem="BJe-QU-jAU" secondAttribute="top" id="WpV-t6-9cP"/>
+                            <constraint firstItem="wmd-zZ-3if" firstAttribute="leading" secondItem="BJe-QU-jAU" secondAttribute="leading" constant="16" id="WtO-l9-X3D"/>
                             <constraint firstItem="K8t-IO-ZR2" firstAttribute="leading" secondItem="BJe-QU-jAU" secondAttribute="leading" id="Zdu-fP-paf"/>
                             <constraint firstItem="K8t-IO-ZR2" firstAttribute="trailing" secondItem="BJe-QU-jAU" secondAttribute="trailing" id="ljw-Ta-ZSg"/>
+                            <constraint firstItem="DeK-zh-l2Y" firstAttribute="top" secondItem="wmd-zZ-3if" secondAttribute="bottom" constant="16" id="nZG-Kq-WoV"/>
+                            <constraint firstItem="wmd-zZ-3if" firstAttribute="centerY" secondItem="3qZ-Rh-Kdt" secondAttribute="centerY" id="reV-Oq-KC3"/>
                         </constraints>
                     </view>
                 </viewController>
