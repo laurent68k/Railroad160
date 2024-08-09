@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3088E82C65DFF200830179 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3088E72C65DFF200830179 /* AboutViewController.swift */; };
+		4D3088EB2C65E04000830179 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3088EA2C65E04000830179 /* Extensions.swift */; };
 		4D3632292C652A4A005F7819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3632282C652A4A005F7819 /* AppDelegate.swift */; };
 		4D36322B2C652A4A005F7819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36322A2C652A4A005F7819 /* SceneDelegate.swift */; };
-		4D36322D2C652A4A005F7819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36322C2C652A4A005F7819 /* ViewController.swift */; };
+		4D36322D2C652A4A005F7819 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36322C2C652A4A005F7819 /* MainViewController.swift */; };
 		4D3632302C652A4A005F7819 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D36322F2C652A4A005F7819 /* Base */; };
 		4D3632322C652A50005F7819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632312C652A50005F7819 /* Assets.xcassets */; };
 		4D3632352C652A50005F7819 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632342C652A50005F7819 /* Base */; };
+		4D3632402C652C13005F7819 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36323F2C652C13005F7819 /* MainViewModel.swift */; };
+		4D7857E32C65EA7D00A9549B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D7857E02C65EA7D00A9549B /* FontAwesome.ttf */; };
+		4D7857E42C65EA7D00A9549B /* FAIcon+Lookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7857E12C65EA7D00A9549B /* FAIcon+Lookup.swift */; };
+		4D7857E52C65EA7D00A9549B /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7857E22C65EA7D00A9549B /* FAIcon.swift */; };
+		4D7857E82C65ECA100A9549B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7857E72C65ECA100A9549B /* Theme.swift */; };
+		4D95DCBB2C66250C00DCF4A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95DCBA2C66250C00DCF4A9 /* BaseViewController.swift */; };
+		4D95DCBD2C6625AD00DCF4A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95DCBC2C6625AD00DCF4A9 /* SettingsViewController.swift */; };
+		95416FEAE40FE05ED924A71B /* Pods_railroad160.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB2C1A9A9D38BE3BE10059D /* Pods_railroad160.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07C462D0AD2A93BD731A30F5 /* Pods-railroad160.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-railroad160.release.xcconfig"; path = "Target Support Files/Pods-railroad160/Pods-railroad160.release.xcconfig"; sourceTree = "<group>"; };
+		4D3088E72C65DFF200830179 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		4D3088EA2C65E04000830179 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4D3632252C652A4A005F7819 /* railroad160.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = railroad160.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3632282C652A4A005F7819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D36322A2C652A4A005F7819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D36322C2C652A4A005F7819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D36322C2C652A4A005F7819 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4D36322F2C652A4A005F7819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D3632312C652A50005F7819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3632342C652A50005F7819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3632362C652A50005F7819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D36323F2C652C13005F7819 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4D7857E02C65EA7D00A9549B /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		4D7857E12C65EA7D00A9549B /* FAIcon+Lookup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FAIcon+Lookup.swift"; sourceTree = "<group>"; };
+		4D7857E22C65EA7D00A9549B /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
+		4D7857E72C65ECA100A9549B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		4D95DCBA2C66250C00DCF4A9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4D95DCBC2C6625AD00DCF4A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6EB2C1A9A9D38BE3BE10059D /* Pods_railroad160.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_railroad160.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A61B49BDC214C12ACFAB2E /* Pods-railroad160.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-railroad160.debug.xcconfig"; path = "Target Support Files/Pods-railroad160/Pods-railroad160.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95416FEAE40FE05ED924A71B /* Pods_railroad160.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D3088E92C65E02D00830179 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D3088EA2C65E04000830179 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4D36321C2C652A49005F7819 = {
 			isa = PBXGroup;
 			children = (
 				4D3632272C652A4A005F7819 /* railroad160 */,
 				4D3632262C652A4A005F7819 /* Products */,
+				A8BA17F437AED447AC4476D7 /* Frameworks */,
+				EF26B94DEE0E3904F2EDE006 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,73 @@
 		4D3632272C652A4A005F7819 /* railroad160 */ = {
 			isa = PBXGroup;
 			children = (
+				4D95DCB92C6624E700DCF4A9 /* Ancestors */,
+				4D7857E62C65EC9400A9549B /* Classes */,
+				4D7857DF2C65EA5800A9549B /* FontAwesome */,
+				4D3088E92C65E02D00830179 /* Extensions */,
+				4D36323C2C652B76005F7819 /* Controllers */,
 				4D3632282C652A4A005F7819 /* AppDelegate.swift */,
 				4D36322A2C652A4A005F7819 /* SceneDelegate.swift */,
-				4D36322C2C652A4A005F7819 /* ViewController.swift */,
 				4D36322E2C652A4A005F7819 /* Main.storyboard */,
 				4D3632312C652A50005F7819 /* Assets.xcassets */,
 				4D3632332C652A50005F7819 /* LaunchScreen.storyboard */,
 				4D3632362C652A50005F7819 /* Info.plist */,
 			);
 			path = railroad160;
+			sourceTree = "<group>";
+		};
+		4D36323C2C652B76005F7819 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D3088E72C65DFF200830179 /* AboutViewController.swift */,
+				4D95DCBC2C6625AD00DCF4A9 /* SettingsViewController.swift */,
+				4D36322C2C652A4A005F7819 /* MainViewController.swift */,
+				4D36323F2C652C13005F7819 /* MainViewModel.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D7857DF2C65EA5800A9549B /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				4D7857E22C65EA7D00A9549B /* FAIcon.swift */,
+				4D7857E12C65EA7D00A9549B /* FAIcon+Lookup.swift */,
+				4D7857E02C65EA7D00A9549B /* FontAwesome.ttf */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
+		4D7857E62C65EC9400A9549B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D7857E72C65ECA100A9549B /* Theme.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4D95DCB92C6624E700DCF4A9 /* Ancestors */ = {
+			isa = PBXGroup;
+			children = (
+				4D95DCBA2C66250C00DCF4A9 /* BaseViewController.swift */,
+			);
+			path = Ancestors;
+			sourceTree = "<group>";
+		};
+		A8BA17F437AED447AC4476D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB2C1A9A9D38BE3BE10059D /* Pods_railroad160.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF26B94DEE0E3904F2EDE006 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90A61B49BDC214C12ACFAB2E /* Pods-railroad160.debug.xcconfig */,
+				07C462D0AD2A93BD731A30F5 /* Pods-railroad160.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3632392C652A50005F7819 /* Build configuration list for PBXNativeTarget "railroad160" */;
 			buildPhases = (
+				62FEF4F42A940CFAA0E01606 /* [CP] Check Pods Manifest.lock */,
 				4D3632212C652A4A005F7819 /* Sources */,
 				4D3632222C652A4A005F7819 /* Frameworks */,
 				4D3632232C652A4A005F7819 /* Resources */,
+				504D25BC371DD0E09D18C3CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +221,70 @@
 				4D3632322C652A50005F7819 /* Assets.xcassets in Resources */,
 				4D3632352C652A50005F7819 /* Base in Resources */,
 				4D3632302C652A4A005F7819 /* Base in Resources */,
+				4D7857E32C65EA7D00A9549B /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		504D25BC371DD0E09D18C3CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-railroad160/Pods-railroad160-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-railroad160/Pods-railroad160-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-railroad160/Pods-railroad160-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62FEF4F42A940CFAA0E01606 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-railroad160-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D3632212C652A4A005F7819 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D36322D2C652A4A005F7819 /* ViewController.swift in Sources */,
+				4D7857E82C65ECA100A9549B /* Theme.swift in Sources */,
+				4D3088EB2C65E04000830179 /* Extensions.swift in Sources */,
+				4D95DCBD2C6625AD00DCF4A9 /* SettingsViewController.swift in Sources */,
+				4D36322D2C652A4A005F7819 /* MainViewController.swift in Sources */,
+				4D7857E42C65EA7D00A9549B /* FAIcon+Lookup.swift in Sources */,
 				4D3632292C652A4A005F7819 /* AppDelegate.swift in Sources */,
+				4D95DCBB2C66250C00DCF4A9 /* BaseViewController.swift in Sources */,
 				4D36322B2C652A4A005F7819 /* SceneDelegate.swift in Sources */,
+				4D3088E82C65DFF200830179 /* AboutViewController.swift in Sources */,
+				4D3632402C652C13005F7819 /* MainViewModel.swift in Sources */,
+				4D7857E52C65EA7D00A9549B /* FAIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +347,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +410,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +431,7 @@
 		};
 		4D36323A2C652A50005F7819 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A61B49BDC214C12ACFAB2E /* Pods-railroad160.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,11 +440,13 @@
 				DEVELOPMENT_TEAM = 2T32WF6U53;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = railroad160/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Railroad 160";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,14 +454,17 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurent68k.ios.railroad160;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		4D36323B2C652A50005F7819 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C462D0AD2A93BD731A30F5 /* Pods-railroad160.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,11 +473,13 @@
 				DEVELOPMENT_TEAM = 2T32WF6U53;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = railroad160/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Railroad 160";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +487,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurent68k.ios.railroad160;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
