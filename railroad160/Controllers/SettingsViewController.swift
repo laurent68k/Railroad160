@@ -10,7 +10,7 @@ import UIKit
 
 class SettingsViewController: BaseViewController {
  
-    public var viewModel : MainViewModel? = nil
+    public var viewModel : Railroad160RemoteProcessor? = nil
     
     @IBAction func cancelAction(_ sender: UIBarButtonItem) {
         
@@ -19,11 +19,22 @@ class SettingsViewController: BaseViewController {
     
     @IBAction func builtinLedOff(_ sender: UIButton) {
         
-        self.viewModel?.ledOff()
+        self.viewModel?.builtinLedOff()
     }
     
     @IBAction func builtinLedOn(_ sender: UIButton) {
 
-        self.viewModel?.ledOn()
+        self.viewModel?.builtinLedOn()
     }
+    
+    @IBAction func autotest(_ sender: UIButton) {
+
+        self.viewModel?.autoTest()
+    }
+
+    @IBAction func relaysWrite(_ sender: UIButton) {
+
+        self.viewModel?.relays()
+    }
+    
 }

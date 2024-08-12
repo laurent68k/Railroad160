@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D24BDF82C676329003826C7 /* RequestBodyBuiltinLed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24BDF72C676329003826C7 /* RequestBodyBuiltinLed.swift */; };
+		4D24BDFA2C6763AA003826C7 /* RequestBodyRelays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24BDF92C6763AA003826C7 /* RequestBodyRelays.swift */; };
 		4D3088E82C65DFF200830179 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3088E72C65DFF200830179 /* AboutViewController.swift */; };
 		4D3088EB2C65E04000830179 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3088EA2C65E04000830179 /* Extensions.swift */; };
 		4D3632292C652A4A005F7819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3632282C652A4A005F7819 /* AppDelegate.swift */; };
@@ -15,18 +17,21 @@
 		4D3632302C652A4A005F7819 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D36322F2C652A4A005F7819 /* Base */; };
 		4D3632322C652A50005F7819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632312C652A50005F7819 /* Assets.xcassets */; };
 		4D3632352C652A50005F7819 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632342C652A50005F7819 /* Base */; };
-		4D3632402C652C13005F7819 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36323F2C652C13005F7819 /* MainViewModel.swift */; };
+		4D3632402C652C13005F7819 /* Railroad160RemoteProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36323F2C652C13005F7819 /* Railroad160RemoteProcessor.swift */; };
 		4D7857E32C65EA7D00A9549B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D7857E02C65EA7D00A9549B /* FontAwesome.ttf */; };
 		4D7857E42C65EA7D00A9549B /* FAIcon+Lookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7857E12C65EA7D00A9549B /* FAIcon+Lookup.swift */; };
 		4D7857E52C65EA7D00A9549B /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7857E22C65EA7D00A9549B /* FAIcon.swift */; };
 		4D7857E82C65ECA100A9549B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7857E72C65ECA100A9549B /* Theme.swift */; };
 		4D95DCBB2C66250C00DCF4A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95DCBA2C66250C00DCF4A9 /* BaseViewController.swift */; };
 		4D95DCBD2C6625AD00DCF4A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95DCBC2C6625AD00DCF4A9 /* SettingsViewController.swift */; };
+		4D9D0D6B2C68C5C000AEC29D /* ResponseBodyRelays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D0D6A2C68C5C000AEC29D /* ResponseBodyRelays.swift */; };
 		95416FEAE40FE05ED924A71B /* Pods_railroad160.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB2C1A9A9D38BE3BE10059D /* Pods_railroad160.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07C462D0AD2A93BD731A30F5 /* Pods-railroad160.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-railroad160.release.xcconfig"; path = "Target Support Files/Pods-railroad160/Pods-railroad160.release.xcconfig"; sourceTree = "<group>"; };
+		4D24BDF72C676329003826C7 /* RequestBodyBuiltinLed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBodyBuiltinLed.swift; sourceTree = "<group>"; };
+		4D24BDF92C6763AA003826C7 /* RequestBodyRelays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBodyRelays.swift; sourceTree = "<group>"; };
 		4D3088E72C65DFF200830179 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		4D3088EA2C65E04000830179 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4D3632252C652A4A005F7819 /* railroad160.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = railroad160.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,13 +42,14 @@
 		4D3632312C652A50005F7819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3632342C652A50005F7819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3632362C652A50005F7819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D36323F2C652C13005F7819 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4D36323F2C652C13005F7819 /* Railroad160RemoteProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Railroad160RemoteProcessor.swift; sourceTree = "<group>"; };
 		4D7857E02C65EA7D00A9549B /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		4D7857E12C65EA7D00A9549B /* FAIcon+Lookup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FAIcon+Lookup.swift"; sourceTree = "<group>"; };
 		4D7857E22C65EA7D00A9549B /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
 		4D7857E72C65ECA100A9549B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4D95DCBA2C66250C00DCF4A9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4D95DCBC2C6625AD00DCF4A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4D9D0D6A2C68C5C000AEC29D /* ResponseBodyRelays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBodyRelays.swift; sourceTree = "<group>"; };
 		6EB2C1A9A9D38BE3BE10059D /* Pods_railroad160.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_railroad160.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A61B49BDC214C12ACFAB2E /* Pods-railroad160.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-railroad160.debug.xcconfig"; path = "Target Support Files/Pods-railroad160/Pods-railroad160.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +116,6 @@
 				4D3088E72C65DFF200830179 /* AboutViewController.swift */,
 				4D95DCBC2C6625AD00DCF4A9 /* SettingsViewController.swift */,
 				4D36322C2C652A4A005F7819 /* MainViewController.swift */,
-				4D36323F2C652C13005F7819 /* MainViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,7 +133,9 @@
 		4D7857E62C65EC9400A9549B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4D9D0D6C2C68C60200AEC29D /* Models */,
 				4D7857E72C65ECA100A9549B /* Theme.swift */,
+				4D36323F2C652C13005F7819 /* Railroad160RemoteProcessor.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -139,6 +146,16 @@
 				4D95DCBA2C66250C00DCF4A9 /* BaseViewController.swift */,
 			);
 			path = Ancestors;
+			sourceTree = "<group>";
+		};
+		4D9D0D6C2C68C60200AEC29D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D24BDF72C676329003826C7 /* RequestBodyBuiltinLed.swift */,
+				4D24BDF92C6763AA003826C7 /* RequestBodyRelays.swift */,
+				4D9D0D6A2C68C5C000AEC29D /* ResponseBodyRelays.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A8BA17F437AED447AC4476D7 /* Frameworks */ = {
@@ -283,8 +300,11 @@
 				4D95DCBB2C66250C00DCF4A9 /* BaseViewController.swift in Sources */,
 				4D36322B2C652A4A005F7819 /* SceneDelegate.swift in Sources */,
 				4D3088E82C65DFF200830179 /* AboutViewController.swift in Sources */,
-				4D3632402C652C13005F7819 /* MainViewModel.swift in Sources */,
+				4D24BDF82C676329003826C7 /* RequestBodyBuiltinLed.swift in Sources */,
+				4D9D0D6B2C68C5C000AEC29D /* ResponseBodyRelays.swift in Sources */,
+				4D3632402C652C13005F7819 /* Railroad160RemoteProcessor.swift in Sources */,
 				4D7857E52C65EA7D00A9549B /* FAIcon.swift in Sources */,
+				4D24BDFA2C6763AA003826C7 /* RequestBodyRelays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
