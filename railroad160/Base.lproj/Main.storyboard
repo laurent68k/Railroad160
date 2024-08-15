@@ -59,7 +59,7 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="turnout1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awY-Z0-xBS"/>
+                                            <action selector="turnout1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIQ-pU-GEB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="het-yb-YIM">
@@ -72,7 +72,7 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="turnout2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIO-Ng-MQF"/>
+                                            <action selector="turnout1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16B-sU-jFI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -144,7 +144,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An easy way to control the Railroad 106 with a remote ESP8266 micr-controller " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d38-EJ-Jqp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An easy way to control the Railroad N gauge with a remote ESP8266 micro-controller " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d38-EJ-Jqp">
                                 <rect key="frame" x="0.0" y="603" width="744" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>

@@ -16,15 +16,43 @@ class MainViewController: BaseViewController {
     
         
     @IBOutlet weak var turnout1: UIButton!
-    
     @IBOutlet weak var turnout2: UIButton!
+    @IBOutlet weak var turnout3: UIButton!
+    @IBOutlet weak var turnout4: UIButton!
+    @IBOutlet weak var turnout5: UIButton!
+    @IBOutlet weak var turnout6: UIButton!
+    @IBOutlet weak var turnout7: UIButton!
+    @IBOutlet weak var turnout8: UIButton!
+    @IBOutlet weak var turnout9: UIButton!
     
     @IBOutlet weak var turnout1Leading: NSLayoutConstraint!
     @IBOutlet weak var turnout1Top: NSLayoutConstraint!
     
     @IBOutlet weak var turnout2Leading: NSLayoutConstraint!
-    
     @IBOutlet weak var turnout2Top: NSLayoutConstraint!
+
+    @IBOutlet weak var turnout3Leading: NSLayoutConstraint!
+    @IBOutlet weak var turnout3Top: NSLayoutConstraint!
+    
+    @IBOutlet weak var turnout4Leading: NSLayoutConstraint!
+    @IBOutlet weak var turnout4Top: NSLayoutConstraint!
+    
+    @IBOutlet weak var turnout5Leading: NSLayoutConstraint!
+    @IBOutlet weak var turnout5Top: NSLayoutConstraint!
+
+    @IBOutlet weak var turnout6Leading: NSLayoutConstraint!
+    @IBOutlet weak var turnout6Top: NSLayoutConstraint!
+
+    @IBOutlet weak var turnout7Leading: NSLayoutConstraint!
+    @IBOutlet weak var turnout7Top: NSLayoutConstraint!
+
+    @IBOutlet weak var turnout8Leading: NSLayoutConstraint!
+    @IBOutlet weak var turnout8Top: NSLayoutConstraint!
+
+    @IBOutlet weak var turnout9Leading: NSLayoutConstraint!
+    @IBOutlet weak var turnout9Top: NSLayoutConstraint!
+
+    
     private var viewModel = Railroad160RemoteProcessor.shared
 
     override func viewDidLoad() {
@@ -68,7 +96,7 @@ class MainViewController: BaseViewController {
 
             self.turnout2Leading = self.turnout2Leading.setMultiplier(multiplier: 1.3)
             self.turnout2Top = self.turnout2Top.setMultiplier(multiplier: 0.55)
-}
+        }
     }
     
     //  -----------------------------------------------------------------------------------------------
@@ -89,7 +117,7 @@ class MainViewController: BaseViewController {
     // Unwind segue: Called only when SettingsViewController is closed by Ok button. Cancel perform a dismiss (No segue)
     @IBAction func backToMainViewController(_ sender:UIStoryboardSegue) {
         
-        if let viewController = sender.source as? SettingsViewController {
+        if let _ = sender.source as? SettingsViewController {
             
             self.getRelaysStatus()
         }
@@ -101,15 +129,16 @@ class MainViewController: BaseViewController {
     }
     
     @IBAction func turnout1Action(_ sender: UIButton)  {
-        
-        self.toast(forMessage: "turnout 1 action")
+
+        if sender == self.turnout1 {
+            self.toast(forMessage: "turnout 1 action")
+        }
+        else if sender == self.turnout2 {
+            self.toast(forMessage: "turnout 2 action")
+        }
+
     }
-        
-    @IBAction func turnout2Action(_ sender: UIButton) {
-        
-        self.toast(forMessage: "turnout 2 action")
-    }
-    
+
     //  -----------------------------------------------------------------------------------------------
 
     func getRelaysStatus() {
