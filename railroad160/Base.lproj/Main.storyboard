@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="ipad7_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="railroad160" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="744" height="1133"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-jV-2mp">
-                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <rect key="frame" x="0.0" y="1069" width="744" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="GJy-ua-uCX"/>
                                 </constraints>
@@ -43,53 +43,109 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-nC-CF8">
+                                <rect key="frame" x="0.0" y="24" width="744" height="1045"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reseau160" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCC-jt-nUe">
+                                        <rect key="frame" x="0.0" y="0.0" width="744" height="1045"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J68-FC-ddQ">
+                                        <rect key="frame" x="483.5" y="888.5" width="95" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Turnout 1">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="turnout1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awY-Z0-xBS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="het-yb-YIM">
+                                        <rect key="frame" x="483.5" y="287.5" width="98" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Turnout 2">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="turnout2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIO-Ng-MQF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="J68-FC-ddQ" firstAttribute="leading" secondItem="1cX-nC-CF8" secondAttribute="centerX" multiplier="1.3" id="9BI-qk-XBk"/>
+                                    <constraint firstItem="het-yb-YIM" firstAttribute="top" secondItem="1cX-nC-CF8" secondAttribute="centerY" multiplier="0.55" id="AnX-FV-49G"/>
+                                    <constraint firstAttribute="bottom" secondItem="dCC-jt-nUe" secondAttribute="bottom" id="Mhc-h7-Jp3"/>
+                                    <constraint firstAttribute="trailing" secondItem="dCC-jt-nUe" secondAttribute="trailing" id="Xig-cT-vCx"/>
+                                    <constraint firstItem="dCC-jt-nUe" firstAttribute="leading" secondItem="1cX-nC-CF8" secondAttribute="leading" id="gHt-3n-jo1"/>
+                                    <constraint firstItem="J68-FC-ddQ" firstAttribute="top" secondItem="1cX-nC-CF8" secondAttribute="centerY" multiplier="1.7" id="mUo-ZU-1Mi"/>
+                                    <constraint firstItem="dCC-jt-nUe" firstAttribute="top" secondItem="1cX-nC-CF8" secondAttribute="top" id="oB1-jv-YHN"/>
+                                    <constraint firstItem="het-yb-YIM" firstAttribute="leading" secondItem="1cX-nC-CF8" secondAttribute="centerX" multiplier="1.3" id="tWv-3J-MpA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yb1-jV-2mp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4HJ-0X-Ghj"/>
+                            <constraint firstItem="yb1-jV-2mp" firstAttribute="top" secondItem="1cX-nC-CF8" secondAttribute="bottom" id="C9h-Qw-02M"/>
                             <constraint firstItem="yb1-jV-2mp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="IYo-bN-c59"/>
+                            <constraint firstItem="1cX-nC-CF8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JeH-H7-kFn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1cX-nC-CF8" secondAttribute="trailing" id="Tfx-mN-ddL"/>
+                            <constraint firstItem="1cX-nC-CF8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="baN-6L-aWv"/>
                             <constraint firstItem="yb1-jV-2mp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k2K-ge-47v"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="aboutItem" destination="7pX-Dg-wZf" id="089-b9-gsx"/>
+                        <outlet property="railroadmap" destination="dCC-jt-nUe" id="jv5-b3-asY"/>
                         <outlet property="refreshItem" destination="s3z-Mb-ycP" id="t2O-eO-3E5"/>
                         <outlet property="settingsItem" destination="uoL-HS-6wX" id="rWz-Jp-ptk"/>
+                        <outlet property="turnout1" destination="J68-FC-ddQ" id="W9e-Rg-bub"/>
+                        <outlet property="turnout1Leading" destination="9BI-qk-XBk" id="7Ip-80-sOd"/>
+                        <outlet property="turnout1Top" destination="mUo-ZU-1Mi" id="sW9-Ce-6Qb"/>
+                        <outlet property="turnout2" destination="het-yb-YIM" id="ntf-vP-g8j"/>
+                        <outlet property="turnout2Leading" destination="tWv-3J-MpA" id="xCr-Qp-5X3"/>
+                        <outlet property="turnout2Top" destination="AnX-FV-49G" id="eeP-kE-Qli"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="-2"/>
+            <point key="canvasLocation" x="139.453125" y="-2.34375"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Qya-zr-cSY">
             <objects>
                 <viewController id="PfJ-fR-FXJ" customClass="AboutViewController" customModule="railroad160" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZvZ-rQ-8X1">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="744" height="1113"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RailRoad160" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neE-2n-MSY">
-                                <rect key="frame" x="8" y="138.5" width="688" height="48"/>
+                                <rect key="frame" x="8" y="159.5" width="728" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j22-QS-p4P">
-                                <rect key="frame" x="8" y="230.5" width="688" height="29"/>
+                                <rect key="frame" x="8" y="251.5" width="728" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author : Laurent FAVARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXr-5M-FmW">
-                                <rect key="frame" x="224" y="477.5" width="256" height="29"/>
+                                <rect key="frame" x="244" y="542" width="256" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An easy way to control the Railroad 106 with a remote ESP8266 micr-controller " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d38-EJ-Jqp">
-                                <rect key="frame" x="0.0" y="538.5" width="704" height="23"/>
+                                <rect key="frame" x="0.0" y="603" width="744" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -205,8 +261,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="reseau160" width="1024" height="768"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
